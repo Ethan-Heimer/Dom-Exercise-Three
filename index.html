@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+    
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>About Me</title>
+
+        <style>
+            .list-item{
+                color: red;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>About Me</h1>
+
+        <ul>
+            <li>Nickname: <span id="nickname"></span>
+            <li>Favorites: <span id="favorites"></span>
+            <li>Hometown: <span id="hometown"></span>
+        </ul>
+
+        <img src="dino.png">
+
+        <script>
+            document.getElementsByTagName('body')[0].style.fontFamily = "Arial, sans-serif";
+
+            document.getElementById("nickname").textContent = "Avery"
+            document.getElementById("favorites").textContent = "Pokemon"
+            document.getElementById("hometown").textContent = "Peoria, Arizona"
+
+            var lists = document.getElementsByTagName("li"); 
+            for(i = 0; i < lists.length; i++){
+                lists[i].classList = "list-item";
+            }
+        </script>
+    </body>
+</html>
